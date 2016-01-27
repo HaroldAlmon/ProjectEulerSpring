@@ -4,5 +4,5 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="p001" class="com.translationdata.p000.P001" />
+	<bean name="multiplesOf3And5" class="com.translationdata.p000.P001_MultiplesOf3And5" />
 </beans>
