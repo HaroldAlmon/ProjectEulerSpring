@@ -13,7 +13,7 @@ import com.translationdata.JUnitTests.FastTest;
 @Category(FastTest.class)
 public class P002_UnitTest {
 	P002_EvenFibonacciNumbers getEvenFibonacciNumbers() {
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/translationdata/p000/P002_applicationContext.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/translationdata/resources/P002_applicationContext.xml");
 		return applicationContext.getBean("evenFibonacciNumbers", P002_EvenFibonacciNumbers.class);
 	}
 

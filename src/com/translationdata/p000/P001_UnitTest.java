@@ -15,7 +15,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @Category(FastTest.class)
 public class P001_UnitTest {
 	public P001_MultiplesOf3And5 getMultiplesOf3And5() {
-		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/translationdata/p000/P001_applicationContext.xml");
+		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/translationdata/resources/P001_applicationContext.xml");
 		return appContext.getBean("multiplesOf3And5", P001_MultiplesOf3And5.class);
 	}
 
