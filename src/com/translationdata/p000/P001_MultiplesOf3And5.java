@@ -1,5 +1,5 @@
 package com.translationdata.p000;
-
+/** Strategy: Simple Mathematics. Time complexity is O(1) */
 class P001_MultiplesOf3And5 {
 	public int multiplesOf3And5(final int upperLimit) {
 		return calculateSumBelowLimit(upperLimit, 3)
