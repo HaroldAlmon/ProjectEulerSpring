@@ -1,7 +1,7 @@
 package com.translationdata.p000;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /** Strategy: Spring XML configuration. */
 public enum P003_Factory {
@@ -13,10 +13,8 @@ public enum P003_Factory {
 		return INSTANCE;
 	}
 	
-	public P003_LargestPrimeFactor getLargestPrimeFactor () {
-		if(appContext == null) {
-			appContext = new ClassPathXmlApplicationContext("com/translationdata/resources/P003_applicationContext.xml");
-		}
-		return appContext.getBean("largestPrimeFactor ", P003_LargestPrimeFactor .class);
+	P003_LargestPrimeFactor getLargestPrimeFactor() {
+		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(P003_AppConfig.class);
+		return applicationContext.getBean("largestPrimeFactor", P003_LargestPrimeFactor.class);
 	}
 }
