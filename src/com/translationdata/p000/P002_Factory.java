@@ -17,6 +17,6 @@ public enum P002_Factory {
 		if(appContext == null) {
 			appContext = new ClassPathXmlApplicationContext("com/translationdata/resources/P002_applicationContext.xml");
 		}
-		return appContext.getBean("evenFibonacciNumbers ", P002_EvenFibonacciNumbers .class);
+		return appContext.getBean("evenFibonacciNumbers", P002_EvenFibonacciNumbers .class);
 	}
 }
