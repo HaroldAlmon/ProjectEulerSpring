@@ -13,7 +13,6 @@ import com.translationdata.JUnitTests.FastTest;
 
 /** Strategy: Simple mathematics. */
 @Category(FastTest.class)
-@RunWith(Parameterized.class)
 public class P002_UnitTest {
 	P002_EvenFibonacciNumbers getEvenFibonacciNumbers() {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/translationdata/resources/P002_applicationContext.xml");

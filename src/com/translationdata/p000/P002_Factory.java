@@ -3,6 +3,7 @@ package com.translationdata.p000;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/** Strategy: Spring XML configuration. */
 public enum P002_Factory {
 	INSTANCE;
 
