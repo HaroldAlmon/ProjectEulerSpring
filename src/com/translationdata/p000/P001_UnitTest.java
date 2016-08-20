@@ -39,7 +39,7 @@ public class P001_UnitTest {
 		this.result = result;
 	}
 	
-	@Test(timeout=1000)
+	@Test(timeout=15000)
 	public void SumOfMultiplesOf3And5Below1000() {
 		final int sumOfMultiples = p001_Factory.getMultiplesOf3And5().multiplesOf3And5(upperLimit);
 		System.out.printf("P001: multiplesOf3And5(%d) = %s%n", upperLimit, upperLimit, sumOfMultiples);
